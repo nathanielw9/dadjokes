@@ -71,14 +71,14 @@ const searchForJoke = () =>
     'User-Agent': 'Dad Jokes (https://github.com/nathanielw9/dadjokes)' 
   });
 
-  console.log('input: ' + $('.search-input').val())
   let term = $('.search-input').val();
   let limit = 10;
   let page = resultsPage++;
-  console.log('totalPages: ' + totalPages)
+  
   if (page > totalPages)
   {
-    alert('No more jokes about ' + term + ' :(');
+    alert('No more jokes about "' + term + '" :(');
+    return;
   }
   let searchUrl = url + 'search?limit=' + limit + '&page=' + page + '&term=' + term;
 
@@ -89,11 +89,13 @@ const searchForJoke = () =>
   .then((response) => response.json())
   .then((responseJson) => 
   {
-    console.log(responseJson);
-    // $('#random-joke').text(responseJson.joke);
-
+    if (responseJson.total_jokes < 1)
+    {
+      alert('No jokes found about "' + term + '" :(');
+      return;
+    }
     $('.results').html('');
-    totalPages = responseJson.totalPages;
+    totalPages = responseJson.total_pages;
     let results = responseJson.results;
     results.forEach((joke) =>
     {

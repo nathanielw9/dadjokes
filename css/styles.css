@@ -5,6 +5,10 @@
     src: url(/fonts/actionman_bold_macroman/Action_Man_Bold-webfont.woff) format('woff');
 }
 
+body {
+    background-color: #effffe;
+}
+
 h1 {
     margin-top: 20px;
     margin-bottom: 30px;
@@ -42,6 +46,7 @@ p {
 .quote {
     color: #00B2AB;
     font-size: 30pt;
+    align-self: flex-start;
 }
 
 .right {
@@ -54,7 +59,7 @@ p {
 
 .random-button {
     background-color: #00B2AB;
-    color: white;
+    color: #effffe;
     border: solid;
     border-color: #00B2AB;
     border-radius: 4px;
@@ -67,7 +72,7 @@ p {
 }
 
 .random-button:hover {
-    background-color: white;
+    background-color: #effffe;
     color: #00B2AB;
 }
 
@@ -81,6 +86,7 @@ p {
     border-style: solid;
     border-width: 2px;
     border-color: #00B2AB;
+    background-color: #effffe;
     padding-left: 10px;
     position: relative;
     /* right: -.25em; */
@@ -88,7 +94,7 @@ p {
 
 .search-button {
     background-color: #00B2AB;
-    color: white;
+    color: #effffe;
     border: solid;
     border-color: #00B2AB;
     border-radius: 4px;
@@ -98,18 +104,18 @@ p {
     padding-left: 10px;
     padding-right: 10px;
     position: relative;
-    margin-left: 10px;
+    margin-left: 5px;
     /* left: -.25em; */
 }
 
 .search-button:hover {
-    background-color: white;
+    background-color: #effffe;
     color: #00B2AB;
 }
 
 .joke {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .center {
