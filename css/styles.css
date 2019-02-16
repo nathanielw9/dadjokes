@@ -43,10 +43,10 @@ p {
     text-align: center;
 }
 
-.quote {
+/* .quote {
     color: #00B2AB;
     font-size: 30pt;
-    align-self: flex-start;
+    align-self: baseline;
 }
 
 .right {
@@ -55,7 +55,7 @@ p {
 
 .left {
     text-align: right;
-}
+} */
 
 .random-button {
     background-color: #00B2AB;
