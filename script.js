@@ -99,7 +99,7 @@ const searchForJoke = () =>
     let results = responseJson.results;
     results.forEach((joke) =>
     {
-      $('.results').append('<p class="joke">"' + joke.joke + '"</p>');
+      $('.results').append('<p class="joke">' + joke.joke + '</p>');
     });
   })
   .catch((error) =>
