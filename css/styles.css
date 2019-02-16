@@ -5,36 +5,128 @@
     src: url(/fonts/actionman_bold_macroman/Action_Man_Bold-webfont.woff) format('woff');
 }
 
-
-
-
-
-
 h1 {
     margin-top: 20px;
     margin-bottom: 30px;
 }
 
 .h1-home {
-    padding-left: 8%;
     font-family: TrueCrimes, sans-serif;
     color:#a03800; 
+    text-align: center;
     /* color: brown;  */
-    font-size: 60px;
+    font-size: 80px;
 }
 
 
+.h3-home {
+    font-family: TrueCrimes, sans-serif;
+    color:#a03800; 
+    text-align: center;
+    /* color: brown;  */
+    font-size: 36px;
+}
+
 p {
     color: #4C4C4C;
-    /* margin: 10px; */
     font-size: large;
     line-height: 1.9;
 }
 
 .p-home {
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
 }
+
+.quote {
+    color: #00B2AB;
+    font-size: 30pt;
+}
+
+.right {
+    text-align: left;    
+}
+
+.left {
+    text-align: right;
+}
+
+.random-button {
+    background-color: #00B2AB;
+    color: white;
+    border: solid;
+    border-color: #00B2AB;
+    border-radius: 4px;
+    border-width: 2px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+
+.random-button:hover {
+    background-color: white;
+    color: #00B2AB;
+}
+
+.search-form {
+    margin-top: 30px;
+}
+
+.search-input {
+    height: 40px;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #00B2AB;
+    padding-left: 10px;
+    position: relative;
+    /* right: -.25em; */
+}
+
+.search-button {
+    background-color: #00B2AB;
+    color: white;
+    border: solid;
+    border-color: #00B2AB;
+    border-radius: 4px;
+    border-width: 2px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    margin-left: 10px;
+    /* left: -.25em; */
+}
+
+.search-button:hover {
+    background-color: white;
+    color: #00B2AB;
+}
+
+.joke {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.spacer {
+    height: 30px;
+}
+
+
+
+
 
 .my-brand {
     height: 45px;
